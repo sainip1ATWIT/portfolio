@@ -1,8 +1,16 @@
-console.log('Hello World!');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
-const menuButton = document.getElementById("menu-button");
-const nav = document.getElementById("mobile-nav");
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-menuButton.addEventListener("click", function(){
-    menuButton.innerHTML = "clicked";
-});
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
