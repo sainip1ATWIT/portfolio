@@ -7,8 +7,8 @@ const bar = document.querySelectorAll(".bar");
 //EventListeners
 hamburger.addEventListener("click", mobileMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
-hamburger.addEventListener("mouseover", grayBackground);
-hamburger.addEventListener("mouseleave", redBackground);
+hamburger.addEventListener("mouseover", blackBackground);
+hamburger.addEventListener("mouseleave", whiteBackground);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -20,14 +20,14 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-function grayBackground() {
+function blackBackground() {
     bar.forEach(b => {
-        b.style.backgroundColor = "#475569";
+        b.style.backgroundColor = "#000000";
     });
 }
 
-function redBackground() {
+function whiteBackground() {
     bar.forEach(b => {
-        b.style.backgroundColor = "#a42121";
+        b.style.backgroundColor = "#fff";
     });
 }
