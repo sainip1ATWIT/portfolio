@@ -25,6 +25,8 @@ a {
 .header{
     border-bottom: 1px solid #000;
     background-color: #a42121;
+    width: 100%;
+    position: fixed;
 }
 
 .navbar {
@@ -75,55 +77,67 @@ a {
 }
 
 /* About Me */
-.about-us{
+.about-me {
     height: fit-content;
     width: 100%;
     padding: 90px 0;
     background: #ddd;
-  }
-  .pic{
+}
+
+.pic{
     height: auto;
     width:  302px;
     margin: 5px;
-  }
-  .about{
+    border: 5px solid #a42121;
+    border-radius: 50px;
+}
+
+.about {
     width: 1130px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-  }
-  .text{
+    justify-content: space-around;
+}
+
+.text {
     width: fit-content;
-    margin: 10px;
-  }
-  .text h2{
+    margin: 50px;
+}
+
+.text h2{
     font-size: 90px;
     font-weight: 400;
-    margin: 10px;
-  }
-  .text h5{
+    margin-bottom: 30px;
+    text-align: right;
+}
+.text h5 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  span{
+    margin-left: 3px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+span {
     color: #a42121;
-  }
-  .text p{
+}
+
+.text p {
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1px;
-  }
-  .data{
+    margin: 5px;
+    text-align: right;
+}
+.contacts {
     margin-top: 30px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .hire{
+    justify-content: end;
+}
+
+.link {
     font-size: 18px;
     background: #a42121;
     color: #fff;
@@ -132,10 +146,12 @@ a {
     padding: 8px 25px;
     border-radius: 6px;
     transition: 0.5s;
-  }
-  .hire:hover{
+    margin: 40px;
+}
+
+.link:hover{
     background: #000;
-  }
+}
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
@@ -200,11 +216,17 @@ a {
     .text p {
         min-width: 300px;
     }
+
+    .contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 860px) {
     /* About Me */
-    .text {
+    .text h5, .text h2, .text p {
         text-align: center;
     }
 }
