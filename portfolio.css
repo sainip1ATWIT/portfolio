@@ -22,7 +22,7 @@ a {
 }
 
 .header{
-    border-bottom: 1px solid #a42121;
+    border-bottom: 1px solid #000;
     background-color: #a42121;
 }
 
@@ -60,11 +60,11 @@ a {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #a42121;
+    color: #fff;
 }
 
 .nav-link:hover{
-    color: #475569;
+    color: #000;
 }
 
 .logo {
@@ -73,8 +73,67 @@ a {
     color: #fff;
 }
 
-/* Home */
-
+/* About Me */
+.about-us{
+    height: fit-content;
+    width: 100%;
+    padding: 90px 0;
+    background: #ddd;
+  }
+  .pic{
+    height: auto;
+    width:  302px;
+    margin: 5px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .text{
+    width: 540px;
+    margin: 10px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px;
+  }
+  span{
+    color: #a42121;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hire{
+    font-size: 18px;
+    background: #a42121;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+  }
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
@@ -101,6 +160,10 @@ a {
         margin: 2.5rem 0;
     }
 
+    .nav-link {
+        color: #a42121;
+    }
+
     .hamburger {
         display: block;
         cursor: pointer;
@@ -118,5 +181,30 @@ a {
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* About Me */
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .text h2 {
+        font-size: 60px;
+    }
+
+    .text p {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    /* About Me */
+    .text {
+        text-align: center;
     }
 }

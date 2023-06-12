@@ -10,6 +10,7 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 hamburger.addEventListener("mouseover", blackBackground);
 hamburger.addEventListener("mouseleave", whiteBackground);
 
+//functions
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
