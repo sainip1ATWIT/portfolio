@@ -3,7 +3,6 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 const bar = document.querySelectorAll(".bar");
-let sliderWidth = window.matchMedia("(max-width: 830px)");
 
 //EventListeners
 hamburger.addEventListener("click", mobileMenu);
