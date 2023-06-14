@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background: #ddd;
     min-width: 330px
 }
 
@@ -27,6 +27,7 @@ a {
     background-color: #a42121;
     width: 100%;
     position: fixed;
+    z-index: 9;
 }
 
 .navbar {
@@ -81,7 +82,6 @@ a {
     height: fit-content;
     width: 100%;
     padding: 90px 0;
-    background: #ddd;
 }
 
 .pic{
@@ -151,6 +151,68 @@ span {
 
 .link:hover{
     background: #000;
+}
+
+/* Swiper for Projects */
+.swiper {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    height: 100;
+    text-align: center;
+    font-size: 18px;
+    background: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Project */
+.project-header {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    height: 500px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    background: #a42121;
+}
+
+.card-content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 40%;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: left;
 }
 
 /* Media Queries */
@@ -228,5 +290,30 @@ span {
     /* About Me */
     .text h5, .text h2, .text p {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .project-header {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .card {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-content {
+        height: 250px;
+        width: 80%;
+    }
+
+    .card-header {
+        height: 250px;
+        width: 80%;
     }
 }

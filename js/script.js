@@ -3,6 +3,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 const bar = document.querySelectorAll(".bar");
+let sliderWidth = window.matchMedia("(max-width: 830px)");
 
 //EventListeners
 hamburger.addEventListener("click", mobileMenu);
@@ -32,3 +33,15 @@ function whiteBackground() {
         b.style.backgroundColor = "#fff";
     });
 }
+
+//swiper 
+var swiper = new Swiper(".projects", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+

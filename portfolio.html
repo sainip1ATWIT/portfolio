@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prab Saini Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header-->
@@ -53,8 +54,79 @@
           </section>
 
           <!-- Projects -->
+
+          <h2 class="project-header">Projects</h2>
+
+          <div class="projects swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Crazy 8 | Java (Group of 4)</h3>
+                  </div>
+                  <div class="card-content">
+                    <p>Developed a console-based game of Crazy Eight in Java.
+                      It allowed up to 4 users to play. Wrote object-oriented classes
+                      for individual aspects of the game (player, deck, hand). Used
+                      a stack data structure to deal cards and represent the playing pile.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Steakhouse Database | Oracle SQL (Group of 2)</h3>
+                  </div>
+                  <div class="card-content">
+                    <p>Created Entity-Relationship Diagrams and a Graphical Schema
+                      for a steakhouse franchise. Used Oracle SQL to create a database 
+                      implementation. We also applied SQL commands to extract relevant 
+                      data for a report.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>WIT Billiards Website | HTML/CSS (Individual)</h3>
+                  </div>
+                  <div class="card-content">
+                    <p>With basic knowledge of HTML and CSS, I created the WIT Billiards Website
+                      (Currently my GitHub Pages site). I used flex containers and media queries
+                      to make a website for all platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Rock Paper Scissors | Python (Individual)</h3>
+                  </div>
+                  <div class="card-content">
+                    <p>In this python game, I used sockets to allow a client to play against a computer. 
+                      I created a program for the computer to choose a random selection and prompted 
+                      the user to choose between the three options. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+
     </main>
     
 </body>
-<script src="js/portfolio.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </html>
